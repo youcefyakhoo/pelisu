@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="theme-color" content="#005199" />
+<meta name="description" content="PelisLatinoHD - Ver Películas y Series Online Gratis en Latino HD" />
+<title>PelisLatinoHD - Ver Películas y Series Online Gratis Latino HD</title>
+<link rel="icon" href="https://image.tmdb.org/t/p/w500/aQOWdgUUtm2PpT7WFCak9g1MkSH.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app">
+  <header id="header" class="main">
+    <div class="hbox">
+      <div class="mob-bars" id="mob-bars" aria-label="Menú"><span></span><span></span><span></span></div>
+      <div class="logo">
+        <a href="#/"><h1 class="text">Pelis<span class="hl">Latino</span>HD</h1></a>
+      </div>
+
+      <div class="head-main-nav">
+        <ul class="main-header">
+          <li class="search-mob"><form id="searchform-mob"><input type="text" id="s-mob" placeholder="Buscar..." /><button type="submit" class="search-button"><span class="fas fa-search"></span></button></form></li>
+          <li><a href="#/tendencias">Tendencias</a></li>
+          <li><a href="#/peliculas" data-route="peliculas">Películas</a></li>
+          <li class="has-sub">
+            <a href="#/series" data-route="series">Series <span class="caret">&#9662;</span></a>
+            <ul class="sub-menu">
+              <li><a href="#/series">Temporadas</a></li>
+            </ul>
+          </li>
+          <li><a href="#/animes">Animes</a></li>
+          <li class="has-sub">
+            <a href="javascript:void(0)">Géneros <span class="caret">&#9662;</span></a>
+            <ul class="sub-menu" id="genres-menu"></ul>
+          </li>
+          <li class="has-sub">
+            <a href="javascript:void(0)">País <span class="caret">&#9662;</span></a>
+            <ul class="sub-menu" id="countries-menu"></ul>
+          </li>
+          <li><a href="#/episodios">Episodios</a></li>
+        </ul>
+      </div>
+
+      <div class="search">
+        <form id="searchform" autocomplete="off">
+          <input type="text" id="s" placeholder="Buscar..." />
+          <button type="submit" class="search-button" aria-label="Buscar"><span class="fas fa-search"></span></button>
+        </form>
+      </div>
+      <div class="search-resp" id="search-resp"><span class="fas fa-search"></span></div>
+    </div>
+  </header>
+
+  <div id="main-content"></div>
+
+  <footer class="main">
+    <div class="fbox">
+      <p>PelisLatinoHD — Réplica estática de demo. Este proyecto no aloja ni transmite contenido.</p>
+    </div>
+  </footer>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
